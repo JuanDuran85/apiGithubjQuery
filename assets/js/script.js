@@ -1,7 +1,6 @@
 $(document).ready(function () {
     
     let tarjeta = $('.card');
-    
     let buscar = (e) => {
         tarjeta.html("");
 
@@ -22,6 +21,14 @@ $(document).ready(function () {
                     console.log(error.statusText);
                     console.log(error.status);
                     console.error("El usuario no existe en GitHub");
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'El usuario no existe en GitHub',
+                        footer: 'Intenta nuevamente'
+                    });
+                    $('#nombreUsuario').val("");
+                    nombreUsuario.focus();
                 }
             });
         } else {
@@ -77,5 +84,5 @@ $(document).ready(function () {
         $("#chartContainer").CanvasJSChart(options);
         $('#nombreUsuario').val("");
         nombreUsuario.focus();
-    }
+    };
 });
