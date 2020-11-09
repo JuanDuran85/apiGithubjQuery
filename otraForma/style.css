@@ -1,0 +1,29 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    box-sizing: border-box;
+    background-color:#f4d03f;
+}
+.contenedor{
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    text-align: center;
+    margin: 30px;
+    display: none;
+}   
+.container-fluid{
+    width: 40%;
+    margin:20px;
+    margin-left: 500px;
+  }
+#caja3{
+      text-align: justify;
+      margin: 100px
+  }
+  
+.base_datos{
+    margin-left: 300px;  
+    margin-top: 60 px;
+}
