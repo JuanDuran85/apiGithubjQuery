@@ -1,0 +1,8 @@
+* {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+#chartContainer {
+    height: 300px; 
+    width: 100%;
+}
